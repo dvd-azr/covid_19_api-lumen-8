@@ -40,10 +40,11 @@ php7 -r "unlink('composer-setup.php');"
 # copy all of the file in folder to /src
 COPY . /src
 WORKDIR /src
-COPY .env.example .env
 
-# Expose port 9000
-EXPOSE 8080
+# tmbahan 
+COPY .env.example .env
+# Expose port 80
+EXPOSE 80
 
 RUN composer update
 
