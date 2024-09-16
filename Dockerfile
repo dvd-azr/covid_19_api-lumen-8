@@ -44,7 +44,7 @@ WORKDIR /src
 # tmbahan 
 COPY .env.example .env
 # Expose port 80
-EXPOSE 80
+# EXPOSE 80
 
 RUN composer update
 
