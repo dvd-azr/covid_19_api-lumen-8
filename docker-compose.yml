@@ -10,7 +10,7 @@ services:
       - 8080:8080
     networks:
       - lumen-8
-    command: php -S 0.0.0.0:8080 public/index.php
+    # command: php -S 0.0.0.0:8080 public/index.php
 networks:
     lumen-8:
         driver: bridge
