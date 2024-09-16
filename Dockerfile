@@ -45,7 +45,7 @@ WORKDIR /src
 COPY .env.example .env
 # Expose port 80
 # EXPOSE 80
-# EXPOSE 8080/tcp
+EXPOSE 8080/tcp
 
 RUN composer update
 
