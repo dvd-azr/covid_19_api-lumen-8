@@ -55,4 +55,4 @@ RUN composer update
 
 # run the php server service
 # move this command to -> docker-compose.yml
-# CMD php -S 0.0.0.0:8080 public/index.php
+CMD php -S 0.0.0.0:8080 public/index.php
