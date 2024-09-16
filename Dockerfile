@@ -42,6 +42,9 @@ COPY . /src
 WORKDIR /src
 COPY .env.example .env
 
+# Expose port 9000
+EXPOSE 8080
+
 RUN composer update
 
 # ADD .env.example /src/.env
@@ -49,4 +52,4 @@ RUN composer update
 
 # run the php server service
 # move this command to -> docker-compose.yml
-CMD php -S 0.0.0.0:8080 public/index.php
+# CMD php -S 0.0.0.0:8080 public/index.php
