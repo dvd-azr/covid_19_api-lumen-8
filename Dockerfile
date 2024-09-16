@@ -40,6 +40,7 @@ php7 -r "unlink('composer-setup.php');"
 # copy all of the file in folder to /src
 COPY . /src
 WORKDIR /src
+COPY .env.example .env
 
 RUN composer update
 
